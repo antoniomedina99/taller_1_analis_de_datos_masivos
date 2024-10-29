@@ -1,0 +1,71 @@
+---
+title: "Taller 1 analisde datos masivos"
+author: "Antonio medina barrera"
+date: "2024-10-29"
+output: html_document
+---
+
+# Actividad: Análisis exploratorio de datos y tratamiento de series temporales.
+
+La base de datos Avocado prices (https://www.kaggle.com/timmate/avocado-prices-2020) contiene datos del precio de distintos tipos de aguacate y del mercado donde se vende en Estados Unidos. Más concretamente, esta base está compuesta por un total de 13 variables:<br><br>
+•	Fecha (date). En frecuencia semanal desde inicios de 2015.<br>
+•	Precio por unidad (average_price).<br>
+•	Volumen de ventas (total_volume).<br>
+•	Código de producto (4046,42254770).<br>
+•	Formato de ventas (total_bags, small_bags,large_bags,xlarge_bags).<br>
+•	Tipo, orgánico o conventional (type)<br>
+•	Año (year)<br>
+•	Lugar de ventas (geography)<br>
+
+En un intento de aplicar las nuevas técnicas o herramientas analíticas frente a la analítica tradicional de negocios, nos ha encargado realizar un pequeño análisis de dicha base de datos, así como la realización de una serie de ejercicios para explorar la información existente en este conjunto de datos:
+
+>1. ¿De qué tipo de variables se compone mi base de datos? Realice un análisis exploratorio de las variables numéricas (media, varianza, diagrama de cajas, etc) ¿Qué conclusiones se pueden extraer de la muestra de datos?
+
+
+Importar datos
+```{r}
+# Importar librerías
+library(readr) #leer datos
+library(dplyr) #Manejo de datos
+
+#Importar datos
+df_avocado <- read_csv("datos/avocado-updated-2020.csv")
+#ver datos
+View(df_avocado)
+```
+
+tipos de variables 
+```{r}
+glimpse(df_avocado)
+```
+
+
+```{r}
+summary(df_avocado)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
